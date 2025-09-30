@@ -1,0 +1,515 @@
+{
+    "Herzinsuffizienz (HFpEF)": [
+        {
+            "comorbidity_1_nyha": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "comorbidity_1_myocard": [
+                1
+            ]
+        }
+    ],
+    "Herzinsuffizienz (HFrEF)": [
+        {
+            "comorbidity_1_nyha": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "comorbidity_1_myocard": [
+                2,
+                3,
+                4
+            ]
+        }
+    ],
+    "Herzinsuffizienz": [
+        {
+            "comorbidity_1_nyha": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "comorbidity_1_myocard": [
+                0,
+                null
+            ]
+        }
+    ],
+    "Vorhofflimmern": [
+        {
+            "comorbidity_1_ekg_arr": [
+                1
+            ]
+        },
+        {
+            "comorbidity_2_atrifibrillation": [
+                2
+            ]
+        }
+    ],
+    "V. a. Vorhofflimmern": [
+        {
+            "comorbidity_2_atrifibrillation": [
+                1
+            ]
+        }
+    ],
+    "Herzschrittmacher": [
+        {
+            "comorbidity_1_ekg_sm": [
+                1
+            ]
+        }
+    ],
+    "Koronare Herzkrankheit": [
+        {
+            "comorbidity_1_coronary": [
+                2,
+                3,
+                4
+            ]
+        }
+    ],
+    "Akuter Herzinfarkt": [
+        {
+            "comorbidity_1_mi4w": [
+                1
+            ]
+        }
+    ],
+    "Z. n. Herzinfarkt": [
+        {
+            "comorbidity_1_mi1m": [
+                1
+            ]
+        }
+    ],
+    "Koronarer Bypass": [
+        {
+            "comorbidity_1_bypass": [
+                2
+            ]
+        }
+    ],
+    "Z. n. PTCA": [
+        {
+            "comorbidity_1_ptca": [
+                2
+            ]
+        }
+    ],
+    "Arterielle Verschlusskrankheit (AVK)": [
+        {
+            "comorbidity_1_vasc_avk": [
+                1
+            ]
+        }
+    ],
+    "Carotisstenose links": [
+        {
+            "comorbidity_1_vasc_scar_l": [
+                1
+            ]
+        }
+    ],
+    "Carotisstenose rechts": [
+        {
+            "comorbidity_1_vasc_scar_r": [
+                1
+            ]
+        }
+    ],
+    "Arterielle Hypertonie": [
+        {
+            "comorbidity_1_bp": [
+                2,
+                3
+            ]
+        }
+    ],
+    "Arterielle Hypotonie": [
+        {
+            "comorbidity_1_bp": [
+                4
+            ]
+        }
+    ],
+    "Diabetes Mellitus Typ II": [
+        {
+            "comorbidity_1_diabetes": [
+                3
+            ],
+            "comorbidity_1_diab_der": [
+                0,
+                null
+            ],
+            "comorbidity_1_diab_cons": [
+                0,
+                null
+            ]
+        }
+    ],
+    "Diabetes Mellitus Typ II, entgleist": [
+        {
+            "comorbidity_1_diabetes": [
+                3
+            ],
+            "comorbidity_1_diab_der": [
+                1
+            ],
+            "comorbidity_1_diab_cons": [
+                0,
+                null
+            ]
+        }
+    ],
+    "Diabetes Mellitus Typ II mit Endorgansch\u00e4den, entgleist": [
+        {
+            "comorbidity_1_diabetes": [
+                3
+            ],
+            "comorbidity_1_diab_der": [
+                1
+            ],
+            "comorbidity_1_diab_cons": [
+                1
+            ]
+        }
+    ],
+    "Diabetes Mellitus Typ II mit Endorgansch\u00e4den": [
+        {
+            "comorbidity_1_diabetes": [
+                3
+            ],
+            "comorbidity_1_diab_der": [
+                0,
+                null
+            ],
+            "comorbidity_1_diab_cons": [
+                1
+            ]
+        }
+    ],
+    "Diabetes Mellitus Typ I": [
+        {
+            "comorbidity_1_diabetes": [
+                2
+            ],
+            "comorbidity_1_diab_der": [
+                0,
+                null
+            ],
+            "comorbidity_1_diab_cons": [
+                0,
+                null
+            ]
+        }
+    ],
+    "Diabetes Mellitus Typ I, entgleist": [
+        {
+            "comorbidity_1_diabetes": [
+                2
+            ],
+            "comorbidity_1_diab_der": [
+                1
+            ],
+            "comorbidity_1_diab_cons": [
+                0,
+                null
+            ]
+        }
+    ],
+    "Diabetes Mellitus Typ I mit Endorgansch\u00e4den, entgleist": [
+        {
+            "comorbidity_1_diabetes": [
+                2
+            ],
+            "comorbidity_1_diab_der": [
+                1
+            ],
+            "comorbidity_1_diab_cons": [
+                1
+            ]
+        }
+    ],
+    "Diabetes Mellitus Typ I mit Endorgansch\u00e4den": [
+        {
+            "comorbidity_1_diabetes": [
+                2
+            ],
+            "comorbidity_1_diab_der": [
+                0,
+                null
+            ],
+            "comorbidity_1_diab_cons": [
+                1
+            ]
+        }
+    ],
+    "Hyperthyreose": [
+        {
+            "comorbidity_1_metabo_hyperthy": [
+                1
+            ]
+        }
+    ],
+    "Hyperlipoprotein\u00e4mie": [
+        {
+            "comorbidity_1_metabo_hlp": [
+                1
+            ]
+        }
+    ],
+    "Chronische Niereninsuffizienz": [
+        {
+            "comorbidity_1_kidney": [
+                2
+            ]
+        }
+    ],
+    "Terminale Niereninsuffizienz": [
+        {
+            "comorbidity_1_kidney": [
+                3
+            ]
+        }
+    ],
+    "Leberzirrhose (Child A)": [
+        {
+            "comorbidity_1_liver": [
+                3
+            ]
+        }
+    ],
+    "Leberzirrhose (Child B)": [
+        {
+            "comorbidity_1_liver": [
+                4
+            ]
+        }
+    ],
+    "Leberzirrhose (Child C)": [
+        {
+            "comorbidity_1_liver": [
+                5
+            ]
+        }
+    ],
+    "Chronisch obstruktive Lungenerkrankung (COPD)": [
+        {
+            "comorbidity_1_copd": [
+                1
+            ]
+        }
+    ],
+    "Asthma": [
+        {
+            "comorbidity_1_asthma": [
+                1
+            ]
+        }
+    ],
+    "Restriktive Ventilationsst\u00f6rung": [
+        {
+            "comorbidity_1_res": [
+                1
+            ]
+        }
+    ],
+    "Respiratorischer Infekt": [
+        {
+            "comorbidity_1_resp_inf": [
+                1
+            ]
+        }
+    ],
+    "Pneumonie": [
+        {
+            "comorbidity_1_pneu": [
+                1
+            ]
+        }
+    ],
+    "ARDS": [
+        {
+            "comorbidity_1_risks_ards": [
+                1
+            ]
+        }
+    ],
+    "Sepsis": [
+        {
+            "comorbidity_1_risks_seps": [
+                1
+            ]
+        }
+    ],
+    "Hypovol\u00e4mischer Schock": [
+        {
+            "comorbidity_1_risks_hypshock": [
+                1
+            ]
+        }
+    ],
+    "Polytrauma": [
+        {
+            "comorbidity_1_risk_polytr": [
+                1
+            ]
+        }
+    ],
+    "Epilepsie": [
+        {
+            "comorbidity_1_neuro_epi": [
+                1
+            ]
+        }
+    ],
+    "Z. n. Schlaganfall/TIA ohne Residuuen": [
+        {
+            "comorbidity_1_apoplextia": [
+                0
+            ]
+        }
+    ],
+    "Z. n. Schlaganfall": [
+        {
+            "comorbidity_1_apoplextia": [
+                1
+            ]
+        }
+    ],
+    "Demenz": [
+        {
+            "comorbidity_1_dementia": [
+                1
+            ]
+        },
+        {
+            "comorbidity_2_dementia": [
+                2
+            ]
+        }
+    ],
+    "V. a. Demenz": [
+        {
+            "comorbidity_2_dementia": [
+                1
+            ]
+        }
+    ],
+    "Parkinson-Erkrankung": [
+        {
+            "comorbidity_2_parkinson": [
+                2
+            ]
+        }
+    ],
+    "V. a. Parkinson-Erkrankung": [
+        {
+            "comorbidity_2_parkinson": [
+                1
+            ]
+        }
+    ],
+    "Depression": [
+        {
+            "comorbidity_2_depression": [
+                2
+            ]
+        }
+    ],
+    "V. a. Depression": [
+        {
+            "comorbidity_2_depression": [
+                1
+            ]
+        }
+    ],
+    "Schlafst\u00f6rung": [
+        {
+            "comorbidity_2_insomnia": [
+                1
+            ]
+        }
+    ],
+    "Osteoporose": [
+        {
+            "comorbidity_2_osteoporosis": [
+                2
+            ]
+        }
+    ],
+    "V. a. Osteoporose": [
+        {
+            "comorbidity_2_osteoporosis": [
+                1
+            ]
+        }
+    ],
+    "Chronische Schmerzen": [
+        {
+            "comorbidity_2_chronicpain": [
+                1,
+                2
+            ]
+        }
+    ],
+    "Obstipation": [
+        {
+            "comorbidity_2_constipation": [
+                1,
+                2
+            ]
+        }
+    ],
+    "Stuhlinkontinenz": [
+        {
+            "bi_prior_9": [
+                0
+            ]
+        }
+    ],
+    "Harninkontinenz": [
+        {
+            "bi_prior_10": [
+                0
+            ]
+        },
+        {
+            "bi_prior_10": [
+                5
+            ],
+            "catheter_prior": [
+                0
+            ]
+        }
+    ],
+    "Alkoholabusus": [
+        {
+            "comorbidity_1_alcohol": [
+                1
+            ]
+        }
+    ],
+    "Nikotinabusus": [
+        {
+            "comorbidity_1_nicotin": [
+                1
+            ]
+        }
+    ],
+    "Drogenabusus": [
+        {
+            "comorbidity_1_drugs": [
+                1
+            ]
+        }
+    ]
+}

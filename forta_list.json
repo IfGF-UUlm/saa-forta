@@ -1,0 +1,29 @@
+{
+    "Wirkstoff":{
+        "0":"Acetylsalicyls\u00e4ure",
+        "1":"Acetylsalicyls\u00e4ure",
+        "2":"Amlodipin",
+        "3":"Colecalciferol",
+        "4":"Enoxaparin",
+        "5":"Torasemid",
+        "6":"Alendrons\u00e4ure und Colecalciferol, Dimenhydrinat, Kaliumchlorid, Levothyroxin, Metamizol-Natrium, Oxycodon und Naloxon, Pantoprazol"
+    },
+    "Indikation":{
+        "0":"Vorhofflimmern",
+        "1":"Chronische Schmerzen",
+        "2":"Arterielle Hypertonie",
+        "3":"Osteoporose",
+        "4":"Vorhofflimmern",
+        "5":"Arterielle Hypertonie",
+        "6":"Indikation ggf. pr\u00fcfen"
+    },
+    "FORTA":{
+        "0":"D",
+        "1":"D",
+        "2":"A",
+        "3":"A",
+        "4":"C",
+        "5":"B",
+        "6":"-"
+    }
+}

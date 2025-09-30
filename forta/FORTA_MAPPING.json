@@ -1,0 +1,95 @@
+{
+    "Arterielle Hypertonie": [
+        "Arterielle Hypertonie"
+    ],
+    "Herzinsuffizienz": [
+        "Herzinsuffizienz (HFrEF)"
+    ],
+    "Herzinsuffizienz (HFrEF)": [
+        "Herzinsuffizienz (HFrEF)"
+    ],
+    "Herzinsuffizienz (HFpEF)": [
+        "Herzinsuffizienz (HFpEF)"
+    ],
+    "Akuter Herzinfakrt": [
+        "Akutes Koronarsyndrom"
+    ],
+    "Z. n. Herzinfarkt": [
+        "Chronische Therapie nach Herzinfarkt",
+        "Chronische Therapie nach Herzinfarkt (Behandlung < 3 Jahre)",
+        "Chronische Therapie nach Herzinfarkt (Behandlung > 3 Jahre)",
+        {
+            "is_not_old": "Chronische Therapie nach Herzinfarkt (Patient < 85 Jahre alt)",
+            "is_old": "Chronische Therapie nach Herzinfarkt (Patient > 85 Jahre alt)",
+            "no_hypertension": "Chronische Therapie nach Herzinfarkt (ohne Hypertonie)"
+        }
+    ],
+    "Z. n. Schlaganfall/TIA ohne Residuuen": [
+        "Schlaganfall, vaskul\u00e4r"
+    ],
+    "Z. n. Schlaganfall": [
+        "Schlaganfall, vaskul\u00e4r"
+    ],
+    "Vorhofflimmern": [
+        "Vorhofflimmern"
+    ],
+    "Chronisch obstruktive Lungenerkrankung (COPD)": [
+        "Obstruktive Lungenerkrankung (COPD)",
+        {
+            "has_pneumonia": "Obstruktive Lungenerkrankung (COPD), akut exazerbiert"
+        }
+    ],
+    "Osteoporose": [
+        "Osteoporose",
+        {
+            "is_woman": "Osteoporose (bei Frauen)",
+            "has_renal_failure": "Osteoporose (bei GFR < 30 ml/min)",
+            "has_no_renal_failure": "Osteoporose (bei GFR < 30 ml/min)"
+        }
+    ],
+    "Diabetes Mellitus Typ II": [
+        "Diabetes Mellitus Typ II"
+    ],
+    "Diabetes Mellitus Typ II, entgleist": [
+        "Diabetes Mellitus Typ II"
+    ],
+    "Diabetes Mellitus Typ II mit Endorgansch\u00e4den": [
+        "Diabetes Mellitus Typ II"
+    ],
+    "Diabetes Mellitus Typ II mit Endorgansch\u00e4den, entgleist": [
+        "Diabetes Mellitus Typ II"
+    ],
+    "Demenz": [
+        "Demenz",
+        "Demenz-assoziierte Unruhe, Agitiertheit, Aggressivit\u00e4t",
+        {
+            "has_depression": "Demenz-assoziierte Verhaltensst\u00f6rungen / Depression",
+            "has_insomnia": "Demenz-assoziierte Schlafst\u00f6rung"
+        }
+    ],
+    "Depression": [
+        "Depression"
+    ],
+    "Schlafst\u00f6rung": [
+        "Insomnie / Schlafst\u00f6rungen"
+    ],
+    "Epilepsie": [
+        "Epilepsie"
+    ],
+    "Parkinson-Erkrankung": [
+        "Morbus Parkinson"
+    ],
+    "Harninkontinenz": [
+        "Inkontinenz"
+    ],
+    "Pneumonie": [
+        "Bakterielle Infektionen und Impfungen"
+    ],
+    "Obstipation": [
+        "Obstipation",
+        "Obstipation (kurzfristig)"
+    ],
+    "Chronische Schmerzen": [
+        "Chronische Schmerzen"
+    ]
+}

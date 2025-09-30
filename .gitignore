@@ -1,0 +1,4 @@
+gitignore
+.idx/
+.venv/
+__pycache__/
