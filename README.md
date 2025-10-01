@@ -1,3 +1,9 @@
-Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
+# SURGE-Ahead FORTA Classification Module
 
-Learn more at https://developers.google.com/idx/guides/customize-idx-env
+**Under Construction**
+
+This repository contains the FORTA Classification Module for the SURGE-Ahead Application (SAA).
+
+The code is functional, but documentation is not yet complete.
+
+Stay tuned.
