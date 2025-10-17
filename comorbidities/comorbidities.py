@@ -18,30 +18,28 @@ def load_comorbidity_mapping():
         dict: Parsed contents of the comorbidity mapping JSON file.
     """
     json_path = Path(__file__).parent / 'COMORBIDITY_MAPPING.json'
-    with open(json_path, 'r') as f:
+    with json_path.open('r') as f:
         return load(f)
 
 
 def safe_get(sample, key, sentinel=None, cast=int):
     """
-    Safely retrieves and casts a value from a dictionary.
+    Helper function to safely get and cast a value from a dict.
 
-    Attempts to get the value associated with a key from the dictionary,
-    then casts it using the specified function (defaults to `int`). If the key
-    is missing, the value is `None`, or casting fails, the sentinel is returned.
-
-    Args:
-        sample (dict): Dictionary to fetch the value from.
-        key (str): Key to look for in the dictionary.
-        sentinel (Any, optional): Default value to return if retrieval or casting fails. Defaults to None.
-        cast (callable, optional): Function to cast the retrieved value. Defaults to int.
-
-    Returns:
-        Any: The cast value or the sentinel if the operation fails.
+    Returns the sentinel if the key is missing, value is null-like, or cast fails.
+    Also handles 'True'/'False' strings safely.
     """
     val = sample.get(key, sentinel)
+    
     if val in NULL:
         return sentinel
+
+    val_str = str(val).strip().lower()
+    if val_str == "true":
+        return True
+    if val_str == "false":
+        return False
+
     try:
         return cast(val)
     except (ValueError, TypeError):

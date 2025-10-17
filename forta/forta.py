@@ -1,7 +1,7 @@
 from pathlib import Path
 from json import load
 import pandas as pd
-from comorbidities.comorbidities import get_comorbidities
+from comorbidities.comorbidities import get_comorbidities, safe_get
 
 
 # Standardized set of values representing missing or null data across inconsistent database entries
@@ -21,9 +21,7 @@ def load_forta_database():
                       'Wirkstoff' (active substance), 'Indikation' (indication), and 'FORTA'.
     """
     database_path = Path(__file__).parent / 'FORTA_database.csv'
-    forta_database = pd.read_csv(
-        './forta/FORTA_database.csv'
-    ).rename(columns={'FORTA-Klassifikation': 'FORTA'})
+    forta_database = pd.read_csv(database_path).rename(columns={'FORTA-Klassifikation': 'FORTA'})
     
     return forta_database
 
@@ -39,7 +37,7 @@ def load_forta_mapping():
               can be either a list of strings or conditional dictionaries.
     """
     json_path = Path(__file__).parent / 'FORTA_MAPPING.json'
-    with open(json_path, 'r') as f:
+    with json_path.open('r') as f:
         return load(f)
 
 
@@ -58,7 +56,7 @@ def get_medication(sample):
     medication = []
 
     for i in range(1, 21):
-        if sample[f'medication_preop_{i}'] and sample[f'medication_preop_{i}'] not in NULL:
+        if sample[f'medication_preop_{i}'] not in NULL.union({False, 0}):
             medication.append(sample[f'medication_preop_{i}'])
 
     return medication
@@ -77,22 +75,22 @@ def forta_condition_check(condition_key, sample, comorbidities):
 
     Returns:
         bool: True if the condition is met for the given sample and comorbidities, False otherwise.
-              Defaults to True if the condition_key is unknown.
+              Defaults to False if the condition_key is unknown.
     """
     condition_map = {
         'has_depression': lambda s, c: 'Depression' in c,
         'has_insomnia': lambda s, c: 'Schlafstörung' in c,
-        'is_woman': lambda s, c: s.get('sex', 1) == 0,
-        'has_renal_failure': lambda s, c: s.get('lab_preop_egfr', 120) < 30,
-        'has_no_renal_failure': lambda s, c: s.get('lab_preop_egfr', 120) >= 30,
-        'is_old': lambda s, c: s.get('adm_age', 70) >= 85,
-        'is_not_old': lambda s, c: s.get('adm_age', 70) < 85,
+        'is_woman': lambda s, c: safe_get(s, 'sex', sentinel=1) == 0,
+        'has_renal_failure': lambda s, c: safe_get(s, 'lab_preop_egfr', sentinel=120, cast=float) < 30,
+        'has_no_renal_failure': lambda s, c: safe_get(s, 'lab_preop_egfr', sentinel=0, cast=float) >= 30,
+        'is_old': lambda s, c: safe_get(s, 'adm_age_coc', sentinel=70, cast=float) >= 85,
+        'is_not_old': lambda s, c: safe_get(s, 'adm_age_coc', sentinel=90, cast=float) < 85,
         'no_hypertension': lambda s, c: 'Arterielle Hypertonie' not in c,
         'has_pneumonia': lambda s, c: 'Pneumonie' in c,
     }
 
-    # Return the result of the corresponding condition function, or True by default
-    return condition_map.get(condition_key, lambda s, c: True)(sample, comorbidities)
+    # Return the result of the corresponding condition function, or False by default
+    return condition_map.get(condition_key, lambda s, c: False)(sample, comorbidities)
 
 
 def get_forta_indications(sample, comorbidities):
