@@ -80,11 +80,11 @@ def forta_condition_check(condition_key, sample, comorbidities):
     condition_map = {
         'has_depression': lambda s, c: 'Depression' in c,
         'has_insomnia': lambda s, c: 'Schlafstörung' in c,
-        'is_woman': lambda s, c: safe_get(s, 'sex', sentinel=1) == 0,
-        'has_renal_failure': lambda s, c: safe_get(s, 'lab_preop_egfr', sentinel=120, cast=float) < 30,
-        'has_no_renal_failure': lambda s, c: safe_get(s, 'lab_preop_egfr', sentinel=0, cast=float) >= 30,
-        'is_old': lambda s, c: safe_get(s, 'adm_age_coc', sentinel=70, cast=float) >= 85,
-        'is_not_old': lambda s, c: safe_get(s, 'adm_age_coc', sentinel=90, cast=float) < 85,
+        'is_woman': lambda s, c: safe_get(s, 'geschlecht', sentinel=1) == 0,
+        'has_renal_failure': lambda s, c: safe_get(s, 'egfr_latest', sentinel=120, cast=float) < 30,
+        'has_no_renal_failure': lambda s, c: safe_get(s, 'egfr_latest', sentinel=0, cast=float) >= 30,
+        'is_old': lambda s, c: safe_get(s, 'alter', sentinel=70, cast=float) >= 85,
+        'is_not_old': lambda s, c: safe_get(s, 'alter', sentinel=90, cast=float) < 85,
         'no_hypertension': lambda s, c: 'Arterielle Hypertonie' not in c,
         'has_pneumonia': lambda s, c: 'Pneumonie' in c,
     }
